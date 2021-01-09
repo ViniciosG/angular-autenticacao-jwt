@@ -1,0 +1,16 @@
+
+image: node:10.15.3
+
+pipelines:
+  branches:
+    master:      
+      - step:
+          name: 'Build'
+          caches:
+            - node
+          script:
+            - echo "Start!"
+            - npm install
+            - npm run build
+            - echo "Finished!"
+

@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.todo {
+    background-color: #261e38 ; 
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.auth{
+  &__header{
+    padding: 13vh 1rem calc(11vh + 35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(#32e47c, #304a9c);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    box-shadow: 0 3px 5px rgba(#000, 0.3);
+    &:before{
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+  
+    }
+  }
+  &__logo{
+    position: relative;
+    z-index: 18;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 7px rgba(#000, 0.15);
+    overflow: hidden;
+  }
+  &__body{
+    padding-bottom: 6rem;
+  }
+  &__form{
+    min-width: 280px;
+    max-width: 340px;
+    margin: auto;
+    margin-top: -40px;
+    padding: 0 10px;
+    position: relative;
+    z-index: 9;
+    &_body{
+      padding: 0.7rem 1.5rem 35px;
+      border-radius: 0.5rem;
+      background: #fff;
+      border: 1px solid #eee;
+      box-shadow: 0 4px 10px rgba(#000, 0.15);
+    }
+    &_title{
+      font-size: 1.3rem;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 1.2rem;
+    }
+    &_actions{
+      text-align: center;
+      padding: 0 2rem;
+      margin-top: -25px;
+      .btn{
+        border-radius: 30px;
+        box-shadow: 0 2px 12px rgba(#3280e4, 0.5);
+      }
+    }
+  }
+}
+
+.foot {
+    background-color: #261e38 ; 
+    text-align: center;
+    color: #fff;
+}
